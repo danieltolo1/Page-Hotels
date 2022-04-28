@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+
+
+  
+/*ACA COMIENZAN LOS ESTILOS EN EL HEADER */
+  
+  .header {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .header__search{
+    position: relative;
+	width: 271px;
+  }
+
+
+
+  .header__search--input {
+   
+    width: 400px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #f3eff0;
+  }
+  
+
+.header_search--icon{
+    color: #191919;
+	position: absolute;
+	left: 370px;
+	top: 50%;
+	transform: translateY(-50%);
+    color: #b3b1b2;
+}
+
+.header__righticon{
+    justify-content:space-around;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.header__righticon--personal{
+
+  top: 20%;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #b3b1b2;
+}
+
+
+/*COMIENZAN LOS ESTILOS DEL NAVBAR */
+
+
+#verticalMenu{
+    background-color: #2d2d2d;
+    color:white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top:49px;
+}
+
+#verticalMenu a{
+  color: white;
+  text-decoration: none;
+}
+
+.main__menuPequeno{
+  width: 5%;
+}
+
+.main__menuExpanded{
+  width: 15%;
+  
+}
+
+.main__menuPequeno__item{
+    margin-top: 40px; 
+}
+
+
+.main__menuPequeno__menu-btn{
+    flex: auto;
+    cursor: pointer;
+}
+
+.main__menuPequeno__item--h4{
+  display: none;
+}
+
+.main__menuExpanded__item--h4{
+  margin: 1px;
+}
+
+.main__menuPequeno__item--icon{
+    padding-top: 6%;
+    font-size: small;
+    height: 50px;
+    display: flex;
+}
+
+.main__menuPequeno__item--icon:hover{
+    background-color:#e52a57 ;
+}
+
+.main__menuPequeno__menu-btn{
+  padding-top: 280%;
+}
+
+.icon{
+    margin-right: 30px;
+    margin-left: 25px;
+}
+
+
+
+/*COMIENZAN LOS ESTILOS PARA EL MAIN DONDE INGRESAMOS LO DE LOS HOTELES*/
+
+.mainExpanded{
+  margin-left: 5%;
+ 
+}
+
+.mainPequeno{
+  margin-left: 15%;
+
+}
+
+
+.main__gallery{
+  height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.main__hotelsCard {
+  display: flex;
+  
+  gap: 15px;
+}
+
+.card {
+  width: 250px;
+  height: 180px;
+  border: solid black 1px;
+}
+
+.card__image {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+ 
+  
+ 

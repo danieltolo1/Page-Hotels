@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/e24ec5b62f.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mini-Reto</title>
+  </head>
+
+  <body>
+    <header id="header" class="header">
+        <img src="img/logo.png" alt="logo"/>
+        <div class="header__search">
+            <input id="searchInput" class="header__search--input" type="text" placeholder="Search Hotels "  onchange="" />
+            <i class="fa-solid fa-magnifying-glass header_search--icon"></i>
+        </div>
+        <div class="header__righticon">
+            <div>
+                <i class="fa-solid fa-bookmark header__righticon--personal"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-comments header__righticon--personal"></i>
+            </div>
+            <div>
+                <img src="img/perfil.png" alt="perfil" class=""/>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main" class="mainPequeno">
+
+        <div id="gallery" class="main__gallery">
+
+           
+        </div>
+
+        <div id="verticalMenu" class="main__menuExpanded">
+                <div class="main__menuPequeno__item">
+                    <a href="#" class="main__menuPequeno__item--a">
+                        <div class="main__menuPequeno__item--icon">
+                            <i class="fa-solid fa-house icon"></i>
+                            <h4 id="menuH4A" class="main__menuExpanded__item--h4">HOTEL</h4>
+                        </div>
+                        <div class="main__menuPequeno__item--icon">
+                            <i class="fa-solid fa-plane-departure icon"></i>
+                            <h4 id="menuH4B" class="main__menuExpanded__item--h4">FLIGHT</h4>
+                        </div>
+                        <div class="main__menuPequeno__item--icon">
+                            <i class="fa-solid fa-key icon"></i>
+                            <h4 id="menuH4C" class="main__menuExpanded__item--h4">CAR RENTAL</h4>
+                        </div>
+                        <div class="main__menuPequeno__item--icon">
+                            <i class="fa-solid fa-map icon"></i>
+                            <h4 id="menuH4D" class="main__menuExpanded__item--h4">TOURS</h4>
+                        </div>
+                    </a>
+
+                </div>
+
+        
+                 <div id="menu-btn" class="main__menuPequeno__menu-btn"> 
+                     <div class="main__menuPequeno__item--icon">
+                        <i class="fa-solid fa-arrows-left-right-to-line icon"></i>
+                        <h4 id="menuH4E" class="main__menuExpanded__item--h4">CONTRAER</h4>
+                    </div>
+                </div>      
+        </div>
+        
+    
+    </main>
+    <script type="module" src="./js/index.js"></script>
+    <script src="./js/navbar.js"></script>
+  </body>
+</html>
