@@ -245,12 +245,13 @@ color: #777c80;
   background-color: #eaeaea;
   min-height: 50vh;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
 }
 
  
 .main__container__descriptionS{
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-left: 20px;
   width: 70%;
   height: 40%;
   background-color: #ffffff;
@@ -267,3 +268,18 @@ color: #777c80;
   line-height: 1.6;
  }
 
+.cardDes{
+  width: 250px;
+  height: 250px;
+  border: solid #e52a57 2px;
+  display: inline-block;
+  margin-top: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.card__image__des{
+  border-radius: 10px;
+  width: 249px;
+  height: 249px;
+}

@@ -28,10 +28,10 @@ cardDesc.setAttribute("class","main__container__card");
 
 
 const cardHoteldes = document.createElement("div");
-cardHoteldes.setAttribute("class", "card");
+cardHoteldes.setAttribute("class", "cardDes");
 
 const imageHotel3 = document.createElement("img");
-    imageHotel3.setAttribute("class", "card__image");
+    imageHotel3.setAttribute("class", "card__image__des");
     
 
 
