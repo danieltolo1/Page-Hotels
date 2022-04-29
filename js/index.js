@@ -1,7 +1,7 @@
 import {hotelsData}  from "../resources/data.js"
 
 const sectionHotels = document.getElementById("gallery");
-const inputSearch = document.getElementById("searchInput");
+const nameHotel = document.getElementById("nameHotel");
 const btn = document.getElementById("searchBtn");
 
 //variables para la busqueda
@@ -12,9 +12,13 @@ let textoInput = "";
  //const cardHotel = document.createElement("div");
  //cardHotel.setAttribute("class", "card");
 
- //const titleHotel = document.createElement("h3");
- //titleHotel.setAttribute("class", "card__title");
- //titleHotel.textContent = hotelsData[0].name;
+ const titleHotel = document.createElement("h3");
+ titleHotel.setAttribute("class", "card__title");
+
+ 
+  //document.getElementById(element.photo).value;
+  //console.log(a);
+
 
  //const imageHotel = document.createElement("img");
  //imageHotel.setAttribute("class", "card__image");
@@ -51,7 +55,7 @@ let textoInput = "";
     const cardHotel = document.createElement("div");
     cardHotel.setAttribute("class", "card");
 
-    const titleHotel = document.createElement("h3");
+    //const titleHotel = document.createElement("h3");
     //titleHotel.setAttribute("class", "card__title");
     //titleHotel.textContent = element.name;
 
@@ -63,6 +67,17 @@ let textoInput = "";
     sectionHotels.appendChild(cardHotel);
    // cardHotel.appendChild(titleHotel);
     cardHotel.appendChild(imageHotel);
+
+  imageHotel.addEventListener("click",()=>{
+   console.log(element.name)
+  ponernombres();
+  })
+  
+  function ponernombres(){
+    titleHotel.textContent = element.name;
+    nameHotel.appendChild(titleHotel);
+  }
+
   });
 //}
 

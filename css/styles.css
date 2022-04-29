@@ -111,7 +111,8 @@
 }
 
 .main__menuPequeno__item--icon{
-    padding-top: 6%;
+    padding-top: 10%;
+    margin-bottom: 10%;
     font-size: small;
     height: 50px;
     display: flex;
@@ -122,7 +123,7 @@
 }
 
 .main__menuPequeno__menu-btn{
-  padding-top: 280%;
+  padding-top: 90%;
 }
 
 .icon{
@@ -133,6 +134,9 @@
 
 
 /*COMIENZAN LOS ESTILOS PARA EL MAIN DONDE INGRESAMOS LO DE LOS HOTELES*/
+
+
+
 
 .mainExpanded{
   margin-left: 5%;
@@ -146,31 +150,43 @@
 
 
 .main__gallery{
-  height: 180px;
-  display: flex;
-  flex-wrap: wrap;
+  height: 250px;
+  white-space: nowrap;
+  overflow-y: hidden; 
+  overflow-x: auto;
 
 }
 
 .main__hotelsCard {
   display: flex;
-  
+  display: inline-block;
   gap: 15px;
 }
 
 .card {
   width: 250px;
-  height: 180px;
+  height: 250px;
   border: solid black 1px;
+  display: inline-block;
 }
 
 .card__image {
   width: 100%;
+  height: 100%;
 }
 
 
+.main__nameHotelc{
+  height: 70px;
+  
 
+}
 
+.main__container{
+  background-color: rgba(248,248,248,255); 
+  min-height: 50vh;
+
+}
 
 
 
