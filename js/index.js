@@ -30,7 +30,9 @@ cardDesc.setAttribute("class","main__container__card");
 const cardHoteldes = document.createElement("div");
 cardHoteldes.setAttribute("class", "card");
 
-
+const imageHotel3 = document.createElement("img");
+    imageHotel3.setAttribute("class", "card__image");
+    
 
 
 //let textoInput = "";
@@ -106,13 +108,11 @@ cardHoteldes.setAttribute("class", "card");
     cityRooms.appendChild(cantHab);
     cardD.appendChild(cardDesc);
     
-    const imageHotel3 = document.createElement("img");
-    imageHotel3.setAttribute("class", "card__image");
-    imageHotel3.setAttribute("src", element.photo);
-    imageHotel3.setAttribute("alt", "imagen del hotel " + element.name);
+    
     imgn.appendChild(cardHoteldes);
     cardHoteldes.appendChild(imageHotel3);
-
+    imageHotel3.setAttribute("src", element.photo);
+    imageHotel3.setAttribute("alt", "imagen del hotel " + element.name);
 
   }
 
