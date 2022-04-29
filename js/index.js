@@ -1,19 +1,45 @@
 import {hotelsData}  from "../resources/data.js"
 
+
+//variables para asociar al DOM
+
 const sectionHotels = document.getElementById("gallery");
-const nameHotel = document.getElementById("nameHotel");
-const btn = document.getElementById("searchBtn");
+const cityRooms = document.getElementById("cityRooms");
+const cityName = document.getElementById("cityName");
+const cityTittle = document.getElementById("cityTittle")
+const imgn = document.getElementById("container")
+const cardD = document.getElementById("cont");
+
+
 
 //variables para la busqueda
 
-let textoInput = "";
+const titleHotel = document.createElement("h3");
+titleHotel.setAttribute("class", "card__title");
+
+const ubication = document.createElement("h4");
+ubication.setAttribute("class","main__nameHotelc__city");
+
+const cantHab = document.createElement("div");
+cantHab.setAttribute("class","main__nameHotelc__chab");
+
+const cardDesc = document.createElement("h5");
+cardDesc.setAttribute("class","main__container__card");
+
+
+const cardHoteldes = document.createElement("div");
+cardHoteldes.setAttribute("class", "card");
+
+
+
+
+//let textoInput = "";
 
 // ----- renderizado de imagen 1 x 1 (ejemplo) -----
  //const cardHotel = document.createElement("div");
  //cardHotel.setAttribute("class", "card");
 
- const titleHotel = document.createElement("h3");
- titleHotel.setAttribute("class", "card__title");
+
 
  
   //document.getElementById(element.photo).value;
@@ -68,17 +94,47 @@ let textoInput = "";
    // cardHotel.appendChild(titleHotel);
     cardHotel.appendChild(imageHotel);
 
-  imageHotel.addEventListener("click",()=>{
-   console.log(element.name)
-  ponernombres();
-  })
-  
   function ponernombres(){
     titleHotel.textContent = element.name;
-    nameHotel.appendChild(titleHotel);
+    ubication.textContent = element.city + ", " + element.country;
+    cantHab.textContent = element.rooms + "   Rooms  ";
+    cardDesc.textContent = element.description;
+
+
+    cityTittle.appendChild(titleHotel);
+    cityName.appendChild(ubication);
+    cityRooms.appendChild(cantHab);
+    cardD.appendChild(cardDesc);
+    
+    const imageHotel3 = document.createElement("img");
+    imageHotel3.setAttribute("class", "card__image");
+    imageHotel3.setAttribute("src", element.photo);
+    imageHotel3.setAttribute("alt", "imagen del hotel " + element.name);
+    imgn.appendChild(cardHoteldes);
+    cardHoteldes.appendChild(imageHotel3);
+
+
   }
 
+  imageHotel.addEventListener("click",()=>{
+    console.log(element.name)
+   ponernombres();
+   })
+
+
+
+
   });
+
+
+  
+   
+  
+  
+
+
+
+
 //}
 
 //inputSearch.addEventListener("keyup", (event) => {

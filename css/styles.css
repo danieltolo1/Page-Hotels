@@ -136,8 +136,6 @@
 /*COMIENZAN LOS ESTILOS PARA EL MAIN DONDE INGRESAMOS LO DE LOS HOTELES*/
 
 
-
-
 .mainExpanded{
   margin-left: 5%;
  
@@ -148,12 +146,15 @@
 
 }
 
+/*INGRESAMOS LAS IMAGENES Y CARDS DE LOS HOTELES*/
+
 
 .main__gallery{
   height: 250px;
   white-space: nowrap;
   overflow-y: hidden; 
   overflow-x: auto;
+  width:auto ;
 
 }
 
@@ -182,16 +183,87 @@
 
 }
 
-.main__container{
-  background-color: rgba(248,248,248,255); 
-  min-height: 50vh;
 
+
+
+/*ESTILOS CON EL CONTENEDOR DE NOMBRE Y CALIFICACION DEL HOTEL*/
+
+.main__nameHotelc{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
 
+.card__title{
+margin-left: 40px;
+font-size:xx-large;
+font-weight:initial;
+color: #777c80;
+}
 
 
-
- 
+ .main__nameHotelc__city{
+   display: flex;
+ }
   
+
+ .iconCity{
+   color: #e52a57;
+   margin-right: 10px;
+   text-decoration: none;
+ }
  
+ .main__nameHotelc__city{
+   color: #e52a57;
+   font-weight:bold;
+ }
+
+ .main__nameHotelc__chab{
+   background-color: #e52a57;
+   color: #ffffff;
+   width: 90px;
+   height: 70px;
+   text-align: center;
+   align-items: center;
+   margin-left: 30px;
+   padding-top: 20%;
+   
+ }
+
+ .main__nameHotelc__container{
+   width: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+
+
+ /* ESTILOS PARA LA CARD DE LA DESCRIPCION  */
+
+ .main__container{
+  background-color: #eaeaea;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+ 
+.main__container__descriptionS{
+  margin-top: 30px;
+  width: 70%;
+  height: 40%;
+  background-color: #ffffff;
+  border-radius: 4%;
+  padding: 5%;
+}
+
+
+ .main__container__card{
+  text-align: center;
+  justify-content: center;
+  color:#777c80;
+  font-size: normal;
+  line-height: 1.6;
+ }
+
